@@ -1,9 +1,9 @@
 <?php
+$dbHost =getenv('DB_HOST');
+$dbname =getenv('DB_NAME');
+$dbuser =getenv('DB_USER');
+$dbpass =getenv('DB_PASS');
 
-define('SERVERNAME', '127.0.0.1:3306');
-define('USERNAME', 'root');
-define('PASSWORD', 'mariadb');
-define('DBNAME', 'bookdb');
 try {
 	
 	$connect = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DBNAME);
